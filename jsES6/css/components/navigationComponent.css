@@ -1,0 +1,87 @@
+.wrapper-navigation {
+  flex: none;
+  width: 350px;
+  overflow: scroll;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+}
+.nav-ist_item {
+  background-color: var(--bg-list_item);
+  border: 1px solid var(--border-list_item);
+  font-family: var(--fontFamily-list_item);
+  padding: 1em 2em;
+  height: 95px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.nav-list_item-title {
+  text-transform: uppercase;
+  font-size: var(--font-list_item);
+  color: var(--color-list_item);
+  text-align: right;
+  transform: 0.8s;
+  -webkit-transform: 0.8s;
+  -moz-transform: 0.8s;
+  -ms-transform: 0.8s;
+  -o-transform: 0.8s;
+}
+.nav-list_item-desc {
+  display: none;
+  line-height: 22px;
+  font-size: 14px;
+  color: var(--color-list_item);
+  letter-spacing: 0.9px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+}
+.hover_nav-list_item {
+  position: absolute;
+  color: var(--color-list_item);
+  bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-left: -40px;
+  opacity: 0;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  font-size: 10px;
+}
+/* hover effects */
+.nav-ist_item:hover {
+  background-color: var(--bg_hover-list_item);
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+.nav-ist_item:hover .nav-list_item-title {
+  display: none;
+}
+.nav-ist_item:hover .nav-list_item-desc {
+  display: block;
+  margin-left: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.nav-ist_item:hover .hover_nav-list_item {
+  margin-left: 0;
+  font-size: 14px;
+  opacity: 1;
+}
+.active .nav-list_item-title {
+  color: grey;
+  opacity: 0.3;
+}
+/* hover effects end*/

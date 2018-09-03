@@ -1,0 +1,19 @@
+/* reset default styles */
+@import "others/reset.css";
+
+/* project variables */
+@import "variable.css";
+
+/* basic styles */
+@import "others/base.css";
+
+/* btn styles */
+@import "others/btn.css";
+
+/* basic styles of the component  
+<section class="wrapper-navigation">*/
+@import "components/contentComponent.css";
+
+/* basic styles of the component  
+<section class="wrapper-content">*/
+@import "components/navigationComponent.css";

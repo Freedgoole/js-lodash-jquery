@@ -1,0 +1,11 @@
+/* declaring a variable */
+:root {
+  --bg-list_item: #212121;
+  --bg_hover-list_item: #383737;
+  --border-list_item: #2c2c2c;
+  --color-list_item: #ffffff;
+  --font-list_item: 22px;
+  --fontFamily-list_item: "Oswald", sans-serif;
+  --color-news: rgba(0, 0, 0, 0.54);
+}
+/* declaring a variable end*/
